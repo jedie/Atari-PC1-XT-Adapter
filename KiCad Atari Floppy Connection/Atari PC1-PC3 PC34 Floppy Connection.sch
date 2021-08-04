@@ -121,9 +121,6 @@ Wire Wire Line
 Connection ~ 3300 2000
 Wire Wire Line
 	3300 3200 5350 3200
-Connection ~ 5350 3200
-Wire Wire Line
-	5350 3200 5350 3400
 Text Label 4850 2100 2    50   ~ 0
 MotorOn2
 Text Label 4850 2200 2    50   ~ 0
@@ -227,4 +224,19 @@ Wire Wire Line
 Connection ~ 4250 2100
 Wire Wire Line
 	2600 2100 4250 2100
+Wire Wire Line
+	5350 3400 5350 3200
+Connection ~ 5350 3200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 610AE458
+P 5350 3400
+F 0 "#FLG0101" H 5350 3475 50  0001 C CNN
+F 1 "PWR_FLAG" V 5350 3527 50  0000 L CNN
+F 2 "" H 5350 3400 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+	1    5350 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5350 3400
 $EndSCHEMATC
