@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AtariFloppyPlug
+D 14 pol DIN plug with Atari Floppy pinout
+$ENDCMP
+#
+#End Doc Library

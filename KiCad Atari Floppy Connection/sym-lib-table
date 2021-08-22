@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name 14pole_din_plug)(type Legacy)(uri ${KIPRJMOD}/14pole_din_plug.lib)(options "")(descr ""))
+)
