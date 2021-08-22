@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Bus_ISA_8bit J1
+L Atari-PC1-XT-Adapter-rescue:Bus_ISA_8bit-Connector J1
 U 1 1 60F9F3FA
 P 5800 3450
 F 0 "J1" H 5800 5217 50  0001 C CNN
 F 1 "ISA_8bit Slot" H 5800 5126 50  0000 C CNB
-F 2 "" H 5800 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x31_P2.54mm_Vertical" H 5800 3450 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5800 3450 50  0001 C CNN
 	1    5800 3450
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 60FA28D8
 P 3200 3400
 F 0 "J2" H 3250 4817 50  0000 C CNB
 F 1 "Conn_2Rows-49Pins" H 3250 4726 50  0001 C CNN
-F 2 "" H 3200 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical" H 3200 3400 50  0001 C CNN
 F 3 "~" H 3200 3400 50  0001 C CNN
 	1    3200 3400
 	-1   0    0    -1  
@@ -263,7 +263,7 @@ U 1 1 60FF706E
 P 8350 3450
 F 0 "J8" H 8400 4775 50  0000 C CNB
 F 1 "Conn_2Rows-49Pins" H 8400 4776 50  0001 C CNN
-F 2 "" H 8350 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical" H 8350 3450 50  0001 C CNN
 F 3 "~" H 8350 3450 50  0001 C CNN
 	1    8350 3450
 	-1   0    0    -1  
@@ -409,15 +409,11 @@ $EndComp
 Wire Wire Line
 	5100 2350 5000 2350
 Wire Wire Line
-	5000 2350 5000 1150
-Wire Wire Line
 	5100 2550 4500 2550
 Wire Wire Line
 	3800 2050 3800 2300
 Wire Wire Line
 	5100 2750 4300 2750
-Wire Wire Line
-	4300 1050 4300 1100
 $Comp
 L power:+5V #PWR0104
 U 1 1 6113D951
@@ -536,10 +532,6 @@ Wire Wire Line
 	3400 2450 3400 2500
 Wire Wire Line
 	3400 2450 5100 2450
-Wire Wire Line
-	4700 1050 4700 1300
-Wire Wire Line
-	4500 2550 4500 1200
 NoConn ~ 5100 2650
 Wire Wire Line
 	6500 4650 8050 4650
@@ -560,62 +552,43 @@ $EndComp
 Connection ~ 2450 5350
 Wire Wire Line
 	2450 5350 2450 5200
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 6100CD45
-P 4300 1100
-F 0 "#FLG0102" H 4300 1175 50  0001 C CNN
-F 1 "PWR_FLAG" V 4300 1227 50  0000 L CNN
-F 2 "" H 4300 1100 50  0001 C CNN
-F 3 "~" H 4300 1100 50  0001 C CNN
-	1    4300 1100
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4300 1100
-Wire Wire Line
-	4300 1100 4300 2750
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 61020315
-P 4500 1200
-F 0 "#FLG0103" H 4500 1275 50  0001 C CNN
-F 1 "PWR_FLAG" V 4500 1327 50  0000 L CNN
-F 2 "" H 4500 1200 50  0001 C CNN
-F 3 "~" H 4500 1200 50  0001 C CNN
-	1    4500 1200
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4500 1200
-Wire Wire Line
-	4500 1200 4500 1050
-$Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 61020BAD
-P 4700 1300
-F 0 "#FLG0104" H 4700 1375 50  0001 C CNN
-F 1 "PWR_FLAG" V 4700 1427 50  0000 L CNN
-F 2 "" H 4700 1300 50  0001 C CNN
-F 3 "~" H 4700 1300 50  0001 C CNN
-	1    4700 1300
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4700 1300
-Wire Wire Line
-	4700 1300 4700 2150
-$Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 61020FF3
-P 5000 1150
-F 0 "#FLG0105" H 5000 1225 50  0001 C CNN
-F 1 "PWR_FLAG" V 5000 1278 50  0000 L CNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "~" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	0    1    1    0   
-$EndComp
-Connection ~ 5000 1150
-Wire Wire Line
-	5000 1150 5000 1050
 NoConn ~ 3400 2200
 NoConn ~ 6500 1950
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 61219C3F
+P 5600 1150
+F 0 "J3" H 5680 1142 50  0000 L CNN
+F 1 "Conn_01x04" H 5680 1051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5600 1150 50  0001 C CNN
+F 3 "~" H 5600 1150 50  0001 C CNN
+	1    5600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1050 5000 1350
+Wire Wire Line
+	4300 1050 4300 2750
+Wire Wire Line
+	4500 1050 4500 1150
+Wire Wire Line
+	4700 1050 4700 1250
+Connection ~ 4300 1050
+Wire Wire Line
+	4500 1150 5400 1150
+Connection ~ 4500 1150
+Wire Wire Line
+	4500 1150 4500 2550
+Wire Wire Line
+	4700 1250 5400 1250
+Connection ~ 4700 1250
+Wire Wire Line
+	4700 1250 4700 2150
+Wire Wire Line
+	5000 1350 5400 1350
+Connection ~ 5000 1350
+Wire Wire Line
+	5000 1350 5000 2350
+Wire Wire Line
+	4300 1050 5400 1050
 $EndSCHEMATC
