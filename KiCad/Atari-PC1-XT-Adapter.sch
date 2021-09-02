@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Atari-PC1-XT-Adapter-rescue:Bus_ISA_8bit-Connector J1
+L Connector:Bus_ISA_8bit J1
 U 1 1 60F9F3FA
 P 5800 3450
 F 0 "J1" H 5800 5217 50  0001 C CNN
 F 1 "ISA_8bit Slot" H 5800 5126 50  0000 C CNB
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x31_P2.54mm_Vertical" H 5800 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x31_P2.54mm_Vertical" H 5827 1796 50  0000 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5800 3450 50  0001 C CNN
 	1    5800 3450
 	1    0    0    -1  
