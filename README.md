@@ -6,6 +6,10 @@ A XT-Bus Adapter for the old Atari PC1
 
 ![AtariPC1_XT_Adapter PCB.png](https://github.com/jedie/Atari-PC1-XT-Adapter/raw/main/AtariPC1_XT_Adapter%20PCB.png)
 
+Test size via print:
+
+![2021-09-02-print-test.jpeg](https://github.com/jedie/Atari-PC1-XT-Adapter/raw/main/2021-09-02-print-test.jpeg)
+
 ## Current Schema
 
 ![AtariPC1_XT_Adapter.svg](https://github.com/jedie/Atari-PC1-XT-Adapter/raw/main/AtariPC1_XT_Adapter.svg)
